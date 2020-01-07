@@ -14,6 +14,9 @@ ln -s ~/dotfiles/other_dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/other_dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/other_dotfiles/eslintrc ~/.eslintrc
 
+ln -s ~/dotfiles/htop ~/.config/htop
+ln -s ~/dotfiles/nvim ~/.config/nvim
+
  ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
