@@ -11,6 +11,10 @@
 #fi
 
 # Customize to your needs...
+export EDITOR=/usr/local/bin/nvim
+export LANG=en_US.UTF-8
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
@@ -29,3 +33,7 @@ fi;
 
 source <(antibody init)
 antibody bundle < ~/.zsh_plugins.txt
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+

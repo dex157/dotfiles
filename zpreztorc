@@ -233,6 +233,3 @@ zstyle :prezto:module:prompt theme powerlevel10k
 # behavior.
 # zstyle ':prezto:module:utility' safe-ops 'yes'
 
-export LANG=en_US.UTF-8
-export LDFLAGS="-L/usr/local/opt/ruby/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby/include"
