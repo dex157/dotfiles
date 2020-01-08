@@ -2,10 +2,32 @@ augroup vimrc_defx
   autocmd!
   autocmd FileType defx call s:defx_mappings()
   autocmd VimEnter * call s:setup_defx()
+ 	autocmd FileType defx setlocal statusline=defx
+augroup END
+
+augroup CursorLine
+    au!
+    au VimEnter * setlocal cursorline
+    au WinEnter * setlocal cursorline
+    au BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
+    autocmd BufEnter * set cursorline
+    autocmd BufLeave * set nocursorline
+
+    call defx#custom#column('git', 'indicators', {
+    \ 'Modified'  : '|',
+    \ 'Staged'    : '✚',
+    \ 'Untracked' : '✭',
+    \ 'Renamed'   : '➜',
+    \ 'Unmerged'  : '═',
+    \ 'Ignored'   : '☒',
+    \ 'Deleted'   : '✖',
+    \ 'Unknown'   : '?'
+    \ })
 augroup END
 
 nnoremap <silent><Leader>n :call <sid>defx_open({ 'find_current_file': v:true })<CR>
-let s:default_columns = 'indent:git:icons:filename'
+let s:default_columns = 'git:indent:icons:filename'
 
 function! s:setup_defx() abort
   silent! call defx#custom#option('_', {
@@ -76,7 +98,6 @@ function s:defx_toggle_tree() abort
   return defx#do_action('drop')
 endfunction
 
-"defx#is_opened_tree()
 
 function! s:defx_mappings() abort
   nnoremap <silent><buffer>m :call <sid>defx_context_menu()<CR>
@@ -96,5 +117,10 @@ function! s:defx_mappings() abort
   nnoremap <silent><buffer> K :call search('[]', 'b')<CR>
   nnoremap <silent><buffer><expr> yy defx#do_action('yank_path')
   nnoremap <silent><buffer><expr> q defx#do_action('quit')
+  nnoremap <buffer><silent><expr> h defx#do_action('close_tree')
+  nnoremap <buffer><silent><expr> l
+  \ defx#is_directory()
+    \ ? defx#do_action('open_or_close_tree')
+    \ : defx#do_action('drop')
   silent exe 'nnoremap <silent><buffer><expr> tt defx#do_action("toggle_columns", "'.s:default_columns.':size:time")'
 endfunction
