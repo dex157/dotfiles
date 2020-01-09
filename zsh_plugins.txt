@@ -1,0 +1,4 @@
+zsh-users/zsh-completions
+caarlos0/zsh-open-github-pr
+
+sorin-ionescu/prezto
