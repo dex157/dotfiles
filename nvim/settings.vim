@@ -22,9 +22,10 @@ set smarttab
 set cindent
 set tabstop=2
 set shiftwidth=2
+set colorcolumn=120
 
 set nobackup
-set nowritebackup  
+set nowritebackup
 
 set cmdheight=2
 
