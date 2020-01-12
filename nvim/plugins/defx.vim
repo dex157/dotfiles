@@ -34,6 +34,7 @@ function! s:setup_defx() abort
         \ 'columns': s:default_columns,
         \ })
 
+
   silent! call defx#custom#column('filename', {
         \ 'min_width': 80,
         \ 'max_width': 80,
@@ -80,6 +81,8 @@ function! s:defx_open(...) abort
     call execute('wincmd p')
   endif
 
+  silent! call defx#do_action('toggle_ignored_files')
+
   return execute("norm!\<C-w>=")
 endfunction
 
@@ -123,4 +126,6 @@ function! s:defx_mappings() abort
     \ ? defx#do_action('open_or_close_tree')
     \ : defx#do_action('drop')
   silent exe 'nnoremap <silent><buffer><expr> tt defx#do_action("toggle_columns", "'.s:default_columns.':size:time")'
+
+  silent! call defx#do_action('toggle_ignored_files')
 endfunction
