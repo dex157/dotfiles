@@ -37,3 +37,14 @@ antibody bundle < ~/.zsh_plugins.txt
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Core Shortcuts
+alias rm='trash' # Use `trash` program instead of built-in irrecoverable way to delete nodes.
+alias mv='mv --interactive --verbose' # Move nodes with interactive mode and extra verbosity.
+alias cp='cp --interactive --verbose' # Copy nodes with interactive mode and extra verbosity.
+alias ln='ln --interactive --verbose' # Link nodes with interactive mode and extra verbosity.
+alias mkdir='mkdir --parents' # Make missing parent directories when creating folders.
+alias du='du --max-depth=1 --si' # Display size of files and folders under current directory.
+alias df='df --all --si --print-type' # Display all disk usage statistics with SI units and FS types.
+alias ls='ls --almost-all --classify --color=always --group-directories-first --literal' # List name of nodes.
+alias la='ls -l --almost-all --si' # List nodes with their details.
+
