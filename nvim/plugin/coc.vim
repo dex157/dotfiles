@@ -3,8 +3,6 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-json',
-  \ 'coc-eslint',
-  \ 'coc-prettier',
   \ 'coc-css',
   \ 'coc-yaml',
   \ 'coc-tabnine',
@@ -17,8 +15,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
+      \ pumvisible() ? "\<C-n>" : \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 

@@ -1,9 +1,16 @@
+" Disable unused built-in functionality.
+runtime startup/disable.vim
+
+" Define global variables.
+runtime startup/variables.vim
+
+" Enable loading {ftdetect,ftplugin,indent}/*.vim files.
+filetype plugin indent on
+
+" Enable loading syntax/*.vim files.
+syntax on
+
 runtime ./plugins.vim
 runtime ./keymap.vim
 runtime ./settings.vim
-runtime ./plugins/defx.vim
-runtime ./plugins/coc.vim
-runtime ./plugins/nerdcommenter.vim
-runtime ./plugins/denite.vim
-runtime ./plugins/vim-illuminate.vim
-runtime ./plugins/vim-xkbswitch.vim
+

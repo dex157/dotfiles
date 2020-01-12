@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'dense-analysis/ale'
   Plug 'scrooloose/nerdcommenter'
 
   Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
@@ -18,6 +19,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'RRethy/vim-illuminate'
 
   Plug 'editorconfig/editorconfig-vim'
+
+  Plug 'tpope/vim-fugitive'
 
 
 call plug#end()

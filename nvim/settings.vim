@@ -1,4 +1,6 @@
-scriptencoding UTF-8
+set encoding=UTF-8 " Default encoding. (vim-only)
+scriptencoding UTF-8 " Default encoding for current script.
+set fileformats=unix " Only use Unix end-of-line format.
 
 " Disable unused built-in plugins.
 let g:loaded_gzip = v:true
