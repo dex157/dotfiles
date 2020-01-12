@@ -1,5 +1,3 @@
- " Wrap in try/catch to avoid errors on initial install before plugin is available
-try
 " === Denite setup ==="
 " Use ripgrep for searching current directory for files
 " By default, ripgrep will respect rules in .gitignore
@@ -68,9 +66,6 @@ function! s:profile(opts) abort
 endfunction
 
 call s:profile(s:denite_options)
-catch
-  echo 'Denite not installed. It should work after running :PlugInstall'
-endtry
 
 
 " === Denite shorcuts === "
@@ -80,7 +75,7 @@ endtry
 "   <leader>j - Search current directory for occurences of word under cursor
 
 nmap ; :Denite buffer<CR>
-nmap <leader>t :DeniteProjectDir file/rec<CR>
+nmap <C-p> :DeniteProjectDir file/rec<CR>
 nnoremap <leader>g :<C-u>Denite grep:. -no-empty<CR>
 nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
 

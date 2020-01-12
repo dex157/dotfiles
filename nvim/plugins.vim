@@ -13,6 +13,13 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 
+  Plug 'lyokha/vim-xkbswitch'
+
+  Plug 'RRethy/vim-illuminate'
+
+  Plug 'editorconfig/editorconfig-vim'
+
+
 call plug#end()
 
 syntax enable

@@ -5,3 +5,5 @@ runtime ./settings.vim
 runtime ./plugins/coc.vim
 runtime ./plugins/nerdcommenter.vim
 runtime ./plugins/denite.vim
+runtime ./plugins/vim-illuminate.vim
+runtime ./plugins/vim-xkbswitch.vim
