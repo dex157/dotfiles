@@ -1,14 +1,35 @@
 {
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
-  "eslint.enable": true,
-  "eslint.run": "onType",
-  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
   "typescript.suggest.autoImports": true,
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
   "diagnostic.infoSign": "•",
   "coc.preferences.rootPatterns": [
     ".git"
-  ]
+  ],
+  "metals.javaHome": "/Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home",
+  "languageserver": {
+    "haskell": {
+      "command": "hie-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ],
+      "initializationOptions": {
+        "languageServerHaskell": {
+        }
+      }
+    }
+  },
+  "explorer.icon.enableNerdfont": true,
+  "explorer.position": "right",
 }

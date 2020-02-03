@@ -50,5 +50,5 @@ set signcolumn=yes
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 set termguicolors     " enable true colors support
-let ayucolor="mirage" " light | mirage | dark
+let ayucolor="dark" " light | mirage | dark
 colorscheme ayu

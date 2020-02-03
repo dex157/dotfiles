@@ -21,7 +21,14 @@ call plug#begin('~/.vim/plugged')
   Plug 'editorconfig/editorconfig-vim'
 
   Plug 'tpope/vim-fugitive'
+  Plug 'rust-lang/rust.vim'
 
+  Plug 'neovimhaskell/haskell-vim'
+
+  Plug 'derekwyatt/vim-scala'
+
+  " Plug 'preservim/nerdtree'
+  " Plug 'weirongxu/coc-explorer'
 
 call plug#end()
 
