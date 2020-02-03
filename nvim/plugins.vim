@@ -26,9 +26,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'neovimhaskell/haskell-vim'
 
   Plug 'derekwyatt/vim-scala'
-
-  " Plug 'preservim/nerdtree'
-  " Plug 'weirongxu/coc-explorer'
+  Plug 'Yggdroot/indentLine'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'elzr/vim-json'
 
 call plug#end()
 
