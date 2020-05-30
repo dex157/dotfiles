@@ -29,6 +29,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'Yggdroot/indentLine'
   Plug 'airblade/vim-gitgutter'
   Plug 'elzr/vim-json'
+  Plug 'TaDaa/vimade'
+  Plug 'kevinhwang91/rnvimr', {'do': 'make install'}
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+
 
 call plug#end()
 

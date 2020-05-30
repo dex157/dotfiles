@@ -47,8 +47,6 @@ set shortmess+=c
 set signcolumn=yes
 
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
 set termguicolors     " enable true colors support
-let ayucolor="dark" " light | mirage | dark
+let ayucolor="light" " light | mirage | dark
 colorscheme ayu

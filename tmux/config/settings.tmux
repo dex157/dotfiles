@@ -11,14 +11,14 @@ set-option -g prefix C-a
 set-option -g default-command "$SHELL"
 
 # Default term.
-set-option -g default-terminal "screen-256color"
+set-option -g default-terminal "xterm-256color"
 
 # Enable vi style key bindings in command mode.
 set-option -g mode-keys vi
 set-option -g status-keys vi
 
 # Mouse support.
-set-option -g mouse on
+set-option -g mouse off
 
 # Time in milliseconds for which tmux waits after an escape.
 set-option -sg escape-time 10

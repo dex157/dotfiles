@@ -18,7 +18,7 @@ set-option -g status-left ' '
 set-option -g window-status-format '#[fg=white,bg=black] #W '
 set-option -g window-status-current-format '#[fg=white,bg=brightblue] #W '
 set-option -g window-status-separator ' '
-set-option -g status-justify centre
+set-option -g status-justify left
 
 # Right side of status bar
 set-option -g status-right-length 40

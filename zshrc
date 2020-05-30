@@ -16,7 +16,7 @@ export LANG=en_US.UTF-8
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export EVOGITLAB="1BN1j-1xRs12wfMxtCgh"
-
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.cabal/bin:${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/bin:$PATH"
@@ -38,18 +38,10 @@ fi;
 source <(antibody init)
 antibody bundle < ~/.zsh_plugins.txt
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Core Shortcuts
-# alias rm='trash' # Use `trash` program instead of built-in irrecoverable way to delete nodes.
-# alias mv='mv --interactive --verbose' # Move nodes with interactive mode and extra verbosity.
-alias cp='cp --interactive --verbose' # Copy nodes with interactive mode and extra verbosity.
-# alias ln='ln --interactive --verbose' # Link nodes with interactive mode and extra verbosity.
-# alias mkdir='mkdir --parents' # Make missing parent directories when creating folders.
-alias du='du --max-depth=1 --si' # Display size of files and folders under current directory.
-alias df='df --all --si --print-type' # Display all disk usage statistics with SI units and FS types.
-
 JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home
+
 export EDITOR="nvim"
 export NNN_PLUG="a:autojump;t:treeview;g:_git log;o:fzopen;c:fzcd"
+
+# opam configuration
+test -r /Users/dex157/.opam/opam-init/init.zsh && . /Users/dex157/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

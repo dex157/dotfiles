@@ -1,3 +1,100 @@
-man-tmux
-kutsan
-dotfiles
+clock-mode
+clear-history 
+rename-window evo
+rename-window haskell
+new-session -s haskell -n code zsh
+rename-session scala
+new-session -s evo-ts -n code zsh
+rename-window run
+rename-window code
+new-session -s evo-ts -n code zsh
+rename-window run
+new-session -s evo-ts -n code zsh
+new-session -s dotfiles -n code zsh
+new-session -s scala -n code zsh
+rename-session haskell
+w
+rename-window multiplay
+rename-window mp-code
+new-session -s solid -n code zsh
+help
+reload
+new-session -s new-next -n code zsh
+clear-history 
+body
+clear-history 
+body
+bodnkk
+rename-window solid
+clear-history 
+rename-window solid
+rename-window evo
+clock-mode
+new-session -s evo -n code zsh
+detach-client
+new-session -s settings -n code zsh
+rename-window plans
+clear-history 
+detach-client 
+new-session -s solid -n code zsh
+rename-window emacs
+rename-window spacemacs
+rename-window solid
+clear-history 
+new-session -s evo -n code zsh
+rename-window tests
+new-session -s evo -n code zsh
+rename-window web-server
+rename-window tests
+new-session -s reasonml -n code zsh
+reasjqq
+rename-window ocaml
+clear-history 
+new-session -s review -n code zsh
+rename-window storybook-neon
+rename-window js-clinets
+clear-history 
+reload
+rename-session texas
+rename-window js-clients
+rename-window tests
+rename-window js-clients
+rename-window shell
+rename-window storybook
+rename-window js-clients
+clear-history 
+rename-window js-clients
+rename-window bac-storybook
+rename-window neon-storybook
+rename-window bac-shell
+rename-window neon-shell
+deatach
+detouch
+detach-client 
+rename-window js-clients
+rename-window neon-storybook
+rename-window js-clients
+rename-window shell
+rename-window js-clients
+rename-
+clear-history 
+validate-ts
+rename-window validate-ts
+rename-window js-clients
+rename-window tests
+detach-client 
+rename-window js-clients
+rename-window tsc-b
+rename-window js-clients
+rename-window tests
+clear-history]
+clear-history 
+rename-window fp-ts
+rename-window 
+rename-window fp-ts
+clear-history 
+rename-window 
+rename-window js-clients
+rename-window dealermodule
+rename-window tests
+clear-history 

@@ -5,7 +5,6 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-css',
   \ 'coc-yaml',
-  \ 'coc-tabnine',
   \ 'coc-actions',
   \ 'coc-explorer'
   \ ]

@@ -85,7 +85,6 @@ let g:ale_max_buffer_history_size = 10
 " Virtual text options.
 let g:ale_virtualtext_cursor = v:true
 let g:ale_virtualtext_delay = 10
-let g:ale_virtualtext_prefix = '  '
 
 " Sign column options.
 let g:ale_change_sign_column_color = v:false
