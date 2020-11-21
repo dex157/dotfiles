@@ -34,6 +34,9 @@ set cmdheight=2
 " always uses spaces instead of tab characters
 set expandtab
 
+set wildmenu
+set wildmode=longest,list,full
+
 " Some servers have issues with backup files, see #649 set nobackup set nowritebackup
 set hidden
 
@@ -48,5 +51,5 @@ set signcolumn=yes
 
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set termguicolors     " enable true colors support
-let ayucolor="light" " light | mirage | dark
-colorscheme ayu
+" let ayucolor="mirage" " light | mirage | dark
+colorscheme github

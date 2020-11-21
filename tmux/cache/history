@@ -1,46 +1,3 @@
-clock-mode
-clear-history 
-rename-window evo
-rename-window haskell
-new-session -s haskell -n code zsh
-rename-session scala
-new-session -s evo-ts -n code zsh
-rename-window run
-rename-window code
-new-session -s evo-ts -n code zsh
-rename-window run
-new-session -s evo-ts -n code zsh
-new-session -s dotfiles -n code zsh
-new-session -s scala -n code zsh
-rename-session haskell
-w
-rename-window multiplay
-rename-window mp-code
-new-session -s solid -n code zsh
-help
-reload
-new-session -s new-next -n code zsh
-clear-history 
-body
-clear-history 
-body
-bodnkk
-rename-window solid
-clear-history 
-rename-window solid
-rename-window evo
-clock-mode
-new-session -s evo -n code zsh
-detach-client
-new-session -s settings -n code zsh
-rename-window plans
-clear-history 
-detach-client 
-new-session -s solid -n code zsh
-rename-window emacs
-rename-window spacemacs
-rename-window solid
-clear-history 
 new-session -s evo -n code zsh
 rename-window tests
 new-session -s evo -n code zsh
@@ -98,3 +55,46 @@ rename-window js-clients
 rename-window dealermodule
 rename-window tests
 clear-history 
+deatach
+detouch
+detach
+rename-window validate-ts
+rename-window tests
+clear-history 
+rename-window js-clients
+rename-window bac storybook
+rename-window bac-storybook
+gpuswitch
+clear-history 
+gpuswutt
+clear-history 
+rename-window minesweeper
+rename-window tests
+rename-window js-client
+Resolving module 'components/App'
+clear-history 
+Resolving module 'components/App'
+clear-history 
+rename-window ssh-tun
+rename-window storybook
+rename-window emacs
+clear-history 
+rename-window book
+detach-
+detach-client 
+t
+tr
+q
+re
+keyboard
+qmk
+clear-history 
+rename-window sby
+rename-window sbt
+rename-window emacs
+clear-history 
+clock-mode
+rename-window emacs
+clear-history 
+rename-window swift
+rename-window js-clients

@@ -33,6 +33,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'kevinhwang91/rnvimr', {'do': 'make install'}
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'endel/vim-github-colorscheme'
+
+  Plug 'godlygeek/tabular'
+  Plug 'plasticboy/vim-markdown'
 
 
 call plug#end()

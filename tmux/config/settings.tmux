@@ -11,7 +11,8 @@ set-option -g prefix C-a
 set-option -g default-command "$SHELL"
 
 # Default term.
-set-option -g default-terminal "xterm-256color"
+# set-option -g default-terminal "xterm-256color"
+set-option -g default-terminal "alacritty"
 
 # Enable vi style key bindings in command mode.
 set-option -g mode-keys vi
@@ -19,10 +20,8 @@ set-option -g status-keys vi
 
 # Mouse support.
 set-option -g mouse off
-
 # Time in milliseconds for which tmux waits after an escape.
 set-option -sg escape-time 10
-
 # Keep commands history and set its limit.
 set-option -g history-file ~/.tmux/cache/history
 set-option -g history-limit 10000
@@ -47,6 +46,5 @@ set-option -g focus-events on
 set-option -g automatic-rename on
 
 # Terminal overrides.
-set-option -g -a terminal-overrides ',xterm-256color:Tc' # True color support.
-
-
+# set-option -g -a terminal-overrides ',xterm-256color:Tc' # True color support.
+set-option -g -a terminal-overrides ',alacritty:Tc' # True color support.

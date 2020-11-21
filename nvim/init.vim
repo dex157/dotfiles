@@ -5,6 +5,6 @@ filetype plugin indent on
 syntax on
 
 runtime ./plugins.vim
-runtime ./keymap.vim
 runtime ./settings.vim
+runtime ./keymap.vim
 
